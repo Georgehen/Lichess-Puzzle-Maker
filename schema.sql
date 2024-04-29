@@ -22,8 +22,6 @@ CREATE TABLE tactics (
     game_id INTEGER NOT NULL,
     start_position_fen VARCHAR(255) NOT NULL,
     blunder_move VARCHAR(255) NOT NULL,
-    :q
-    :wq
     solution_moves VARCHAR(255) NOT NULL,
     FOREIGN KEY (game_id) REFERENCES games(game_id)
 );
